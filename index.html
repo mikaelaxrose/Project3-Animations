@@ -2,39 +2,82 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mikaela Scott</title>
+	<title>MIKAELA SCOTT</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="stylesheet" href="https://use.typekit.net/jwn5jdo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 <body>
-	<h1 class="m-scott">MIKAELA SCOTT</h1>
-	</script>
-	<footer>
-		<!-- footer content here -->
-		&copy; Team Awesome
-	</footer>
-	<!-- link for jquery -->
-<script>
-	var textWrapper = document.querySelector('.m-scott');
-	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-		anime.timeline({loop: true})
-		.add({
-	targets: '.m-scott .letter',
-	opacity: [0,1],
-	easing: "easeInOutQuad",
-	duration: 2250,
-	delay: (el, i) => 150 * (i+1)
-}).add({
-					targets: '.m-scott',
-					opacity: 0,
-					duration: 1000,
-					easing: "easeOutExpo",
-					delay: 1000
-		});
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
+	<header>
+			<div class='animatedParent'>
+        <h1 class='animated growIn name'>MIKAELA SCOTT</h1>
+			</div>
+
+	</header>
+	<main>
+		<section class="iframe">
+			<h2>my favorite video (right meow)</h2>
+
+		<div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z-yJTjbswhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</section>
+
+		<section class="gallery-section">
+			<h2>picture my life</h2>
+			<div class="life-gallery">
+			<a href="images/original.jpg" data-lightbox="mygallery" data-title="Yours Truly"><img src="images/mee.jpg" alt="my face"></a>
+			<a href="images/too.jpg" data-lightbox="mygallery" data-title="Gavioli"><img src="images/Gavioli.jpg" alt="my husband"></a>
+			<a href="images/eugene.jpg" data-lightbox="mygallery" data-title="Da Baby"><img src="images/babay.jpg" alt="my baby"></a>
+			<a href="images/broadway.jpg" data-lightbox="mygallery" data-title="Brotha"><img src="images/thebro.jpg" alt="my brother"></a>
+			<a href="images/austin.jpg" data-lightbox="mygallery" data-title="My Home"><img src="images/portland.jpg" alt="portland"></a>
+			<a href="images/images/denver.jpg" data-lightbox="mygallery" data-title="First Monster"><img src="images/teva.jpg" alt="teva cat"></a>
+			<a href="images/universal.jpg" data-lightbox="mygallery" data-title="Second Monster"><img src="images/toma.jpg" alt="toma cat"></a>
+			<a href="images/citywalk.jpg" data-lightbox="mygallery" data-title="Last Concert"><img src="images/concert.jpg" alt="tyler, the creator"></a>
+			</div>
+		</section>
+
+    <section>
+      <h2>our love story</h2>
+      <p class="love-story">We met in high school during our senior year. It's crazy because we were both in the theater tract at school the three previous years, and our paths should have crossed before then. But everything happens for a reason, right? It's safe to say that I fell in love instantaneously. He, being an 18 year old boy, needed some convincing. Obviously, my charms wooed the heck out of him... and 6 years later, one engagement, one wedding, two cats, a school transfer, many late night study sessions, a military enlistment, drama (we aren't perfect), one interstate relocation, and lots of love later, we are ready to welcome our baby into the world in June 2020.
+    </section>
+
+    <section class="baby-talk">
+      <h2>baby talk</h2>
+
+      <img src="images/baby-load.png" class="baby-loading"/>
+
+      <div class='animatedParent'>
+      <h3 class='animated growIn coming-soon'>coming soon...</h3>
+      </div>
+
+    </section>
+
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+	</main>
+</body>
+
+<footer>
+	<h6>wow, you scrolled this far! i must be interesting or this is being graded!</h6>
+</footer>
+
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<!-- link for your script file -->
+<script src="scripts/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript" src="scripts/css3-animate-it.js"></script>
+
 </body>
 </html>
